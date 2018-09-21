@@ -8,7 +8,9 @@ In some cases, we need to fuzz static linked binaries. Driller is not good at so
 
 So we use IDA_Wrapper(https://github.com/cxm95/IDA_Wrapper) to do lib function identification, and automatic add hook functions from angr(procedures). 
 
-It works well after testing with some simple binaries, such as pwn20(https://github.com/cxm95/IDA_Wrapper/blob/master/test/pwn20), which cannot be solved after 12 hours of fuzzing using AFL, but several minute using sDriller.
+It works well after testing with some simple binaries, such as pwn20, which cannot be solved after 12 hours of fuzzing using AFL, but several minute using sDriller.
+
+pwn20: (https://github.com/cxm95/IDA_Wrapper/blob/master/test/pwn20)
 
 
 ### Install
